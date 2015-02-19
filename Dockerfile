@@ -20,6 +20,9 @@ RUN export PHANTOM_JS="phantomjs-1.9.8-linux-x86_64" && \
 RUN curl install.meteor.com | /bin/sh
 
 RUN meteor create hello && \
-    cd /hello && \
+    cd hello && \
     meteor add d3 && \
     meteor remove autopublish
+    meteor add meteorhacks:npm
+
+CMD ["meteor"]    
