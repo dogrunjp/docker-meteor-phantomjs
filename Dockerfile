@@ -6,5 +6,6 @@ RUN apt-get install -y \
 
 RUN apt-get install -y build-essential chrpath libssl-dev libxft-dev
 RUN apt-get install -y libfreetype6 libfreetype6-dev
+RUN apt-get install -y libfontconfig1 libfontconfig1-dev
 
 RUN curl install.meteor.com | /bin/sh
